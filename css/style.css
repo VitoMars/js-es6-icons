@@ -18,6 +18,10 @@
 /* -------------------------------------------------- */
 /* Main */
 
+.form-select {
+   width: 15%;
+}
+
 .bg-light_grey {
    background-color: #dddddd;
 }

@@ -97,21 +97,8 @@ const icons = [
    },
 ];
 
-// for (i = 0; i < 5; i++) {
-//    let nuovo_elemento = document.createElement("div");
-//    nuovo_elemento.setAttribute("id", "icons");
-//    nuovo_elemento.setAttribute("class", "box");
-
-//    nuovo_elemento.innerHTML = `
-//    <i class="fas fa-crow"></i>
-//    <div>CROW</div>
-//    `;
-
-//    const iconsContainer = document
-//       .getElementById("container")
-//       .appendChild(nuovo_elemento);
-// }
-
+// -----------------------------------------------
+// Print delle icone
 const iconsContainer = document.getElementById("icons");
 
 print(icons, iconsContainer);
@@ -144,6 +131,32 @@ function print(array, container) {
       </div>
       `;
    });
+}
 
-   console.log(icons);
+console.log(icons);
+
+// -----------------------------------------------
+// Implementazione select
+const select = document.getElementById("type");
+
+select.onchange = function (element) {
+   const filtered = filteredValues(icons, element.target.value);
+   console.log(filtered);
+
+   print(filtered, iconsContainer);
+};
+
+function filteredValues(array, type) {
+   const filteredIcons = array.filter((element) => {
+      if (element.type === type) {
+         return true;
+      }
+      return false;
+   });
+
+   if (type === "all") {
+      return array;
+   }
+
+   return filteredIcons;
 }

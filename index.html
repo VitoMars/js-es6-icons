@@ -35,30 +35,19 @@
       <!-- Main -->
       <main>
          <div class="container-fluid bg-light_grey">
-            <!-- Bottone di selezione -->
-            <div class="dropdown d-flex justify-content-center pt-4">
-               <button
-                  class="btn btn-primary dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+            <!-- Select -->
+            <div class="d-flex justify-content-center align-items-center pt-4">
+               <label class="px-3" for="">Seleziona il tipo: </label>
+               <select
+                  id="type"
+                  class="form-select"
+                  aria-label="Default select example"
                >
-                  Seleziona tipologia
-               </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li>
-                     <a id="animali" class="dropdown-item" href="#">Animali</a>
-                  </li>
-                  <li>
-                     <a id="vegetali" class="dropdown-item" href="#"
-                        >Vegetali</a
-                     >
-                  </li>
-                  <li>
-                     <a id="utenti" class="dropdown-item" href="#">Utenti</a>
-                  </li>
-               </ul>
+                  <option selected value="all">Tutti</option>
+                  <option value="animal">Animali</option>
+                  <option value="vegetable">Vegetali</option>
+                  <option value="user">Utenti</option>
+               </select>
             </div>
 
             <!-- Riga 1 -->
