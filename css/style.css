@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* -------------------------------------------------- */
+/* Header */
+
+.logo {
+   font-family: "Acme", sans-serif;
+}
+
+.text-light_blue {
+   color: #2bb2dd;
+}
+
+/* -------------------------------------------------- */
+/* Main */
+
+.bg-light_grey {
+   background-color: #dddddd;
+}
+
+.box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 150px;
+   width: 300px;
+   background-color: white;
+   border-radius: 10px;
+   margin: 20px;
+}
+
+.fas {
+   font-size: 30px;
+}
+
+/* -------------------------------------------------- */
+/* Footer */
+
+/* -------------------------------------------------- */
