@@ -104,13 +104,13 @@ const iconsContainer = document.getElementById("icons");
 print(icons, iconsContainer);
 
 function print(array, container) {
+   // Svuotamento HTML
    container.innerHTML = "";
 
-   // ForEach per inserimento dell'attributo color
    array.forEach((element, index) => {
+      // Aggiungiamo i colori in base ai tipi
       const { type } = element;
 
-      // Aggiungiamo i colori ai tipi
       if (type == "animal") {
          icons[index].color = "blue";
       } else if (type == "vegetable") {
@@ -118,10 +118,8 @@ function print(array, container) {
       } else if (type == "user") {
          icons[index].color = "violet";
       }
-   });
 
-   // ForEach per l'inserimento nell'html
-   array.forEach((element) => {
+      // Inserimento nell'html
       const { name, family, prefix, color } = element;
 
       container.innerHTML += `
